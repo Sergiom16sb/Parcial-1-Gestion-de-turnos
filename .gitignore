@@ -42,14 +42,29 @@ Thumbs.db
 *.swo
 *~
 
-# Ignore everything except README.md
-# This ignores all files in root
-*
-# Un-ignore README.md
-!README.md
+# Skills and AI config (no code)
+.agents/
+.claude/
+.atl/
+.obsidian/
 
-# Ignore all directories in root (skills, src, etc.)
-*/
-# But allow .gitignore and README.md to be visible
-!/.gitignore
-!/README.md
+# Documentation and non-code files
+*.pdf
+*.zip
+Plan.md
+CLAUDE.md
+skills-lock.json
+
+# Bun lockfile (usually not needed in repo if using package.json)
+bun.lock
+
+# Keep code files:
+# src/
+# package.json
+# tsconfig.json
+# build.ts
+# README.md
+# .gitignore
+# styles/
+# components.json
+# bunfig.toml
